@@ -26,3 +26,8 @@ function fadeOut() {
 }
 
 window.onload = fadeOut();
+
+function switchTema() {
+  const tema = document.getElementById("tema").value;
+  document.getElementsByTagName("meta")[2].content = tema;
+}

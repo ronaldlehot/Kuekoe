@@ -20,6 +20,15 @@
     <header>
       <a style="text-decoration: none" href="index.html" class="logo"><i class="fa-sharp fa-solid fa-hand-back-point-right"></i>Home</a>
 
+      <!-- set dark theme using one line -->
+      <meta name="color-scheme" content="light" />
+      <div class="latar">
+        <select id="tema" onChange="switchTema()">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </div>
+
       <div id="menu-bar" class="fas fa-bars"></div>
 
       <nav class="navbar">
@@ -256,9 +265,10 @@
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>
 
-      <div class="alert alert-success alert-dismissible fade show d-none my-gagal" role="alert">
-        <strong>GAGAL !!!</strong> Orderan wajib di isi.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <!-- Error Alert -->
+      <div class="alert alert-danger alert-dismissible fade show d-none my-gagal">
+        <strong>Error!</strong> Anda wajib mengisikan semua .
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
       </div>
 
       <div class="row">
@@ -279,7 +289,7 @@
 
           <textarea placeholder="alamat" name="alamat" id="address" cols="30" rows="10"></textarea>
 
-          <!-- <input type="submit" value="order now" class="btn" /> -->
+          <input type="submit" value="order now" class="btn" />
           <button type="submit" class="btn btn-kirim">Order Now</button>
           <!-- untuk loading di contact -->
           <button class="btn btn-loading d-none" type="button" disabled>
