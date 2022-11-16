@@ -29,11 +29,11 @@ html {
   scroll-padding-top: 6rem;
 }
 
-body {
-  /* background: #f7f7f7; */
-  /* margin: 0;
-  padding: 0; */
-}
+/* body {
+  background: #f7f7f7;
+  margin: 0;
+  padding: 0;
+} */
 
 .latar {
   position: 50%;
@@ -196,7 +196,7 @@ header .navbar a:hover {
 }
 
 .home .content h3 {
-  font-size: 5rem;
+  font-size: 32px;
   color: #333;
 }
 

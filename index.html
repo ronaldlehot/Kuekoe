@@ -11,6 +11,63 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css" />
+
+
+    <style>
+      .word-waves span{
+        position: absolute;
+        margin-left: 160px;
+        margin-bottom: 20px;
+        padding-top: 0.5%;
+        padding-bottom: 2.5%;
+        color: #fff;
+        font-size: 4rem;
+        transform: translate(-50%, -50%);
+      }
+      .word-waves span:nth-child(1){
+       color: transparent;
+       -webkit-text-stroke: 0.3px #d94d3b;
+       
+      }
+      .word-waves span:nth-child(2){
+       color: rgb(225, 128, 128);
+       -webkit-text-stroke: 1px #d94d3b;
+       animation: animate 3s ease-in-out infinite;
+       
+       
+      }
+      @keyframes animate{
+        0%, 100%{
+          clip-path: polygon(0% 45%,15% 44%,32% 50%,54% 60%,
+          70% 61%,84% 59%,100% 52%,100% 100%,0% 100%
+          );
+          /* clip-path: polygon(0% 71%,16% 75%,34% 72%,51% 62%,
+          67% 50%,84% 45%,100% 46%,100% 100%,0% 100%
+          ); */
+         
+        }
+        50%{
+          /* clip-path: polygon(0% 90%,19% 80%,38% 82%,56% 64%,
+          64% 41%,84% 59%,100% 52%,100% 100%,0% 100%
+          );
+          */
+            clip-path: polygon(0% 71%,16% 75%,34% 72%,51% 62%,
+          67% 50%,84% 45%,100% 46%,100% 100%,0% 100%
+          );
+        }
+      }
+      /* rensponsive in mobile*/
+      @media (max-width: 768px) {
+        .word-waves span{
+          font-size: 2rem;
+        }
+      }
+    
+  
+
+      
+      
+    </style>
   </head>
   <body>
     <!-- awal header -->
@@ -50,10 +107,15 @@
 
     <section class="home" id="home">
       <div class="content">
-        <h3 style="font-family: 'Brush Script MT', Cursive">Welcome to the KueKoe</h3>
+        <div class="word-waves" >
+          <span style="font-family: Arial">Welcome to the KueKoe</span>
+          <span  style="font-family: Arial">Welcome to the KueKoe</span>
+        </div>
         <p> KueKoe Bakery adalah toko kue yang mengutamakan cita rasa yang dapat membuat anda kecanduan.Selain itu, cara pembuatan yang masih tradisional dengan menggunakan tangan atau handmade, semakin memberi nilai jual yang unik dan otentik pada produk kami.</p>
         <a href="order.html" class="btn">order now</a>
       </div>
+
+     
 
       <div class="image">
         <img src="images/cupcakes-removebg-preview.png" alt="" />
