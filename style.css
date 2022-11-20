@@ -177,6 +177,14 @@ header .logo {
   font-size: 2.5rem;
   font-weight: bolder;
   color: #666;
+  overflow: hidden;
+  transition: 0.3s;
+  text-shadow: 0 0 #666, 0 1.2em #ff3838;
+}
+
+header .logo:hover {
+  color: var(--red);
+  text-shadow: 0 -1.2em #666, 0 0 #ff3838;
 }
 
 header .logo i {
@@ -632,6 +640,17 @@ header .navbar a:hover {
 
 .order .row form .inputBox input,
 .order .row form textarea {
+  padding: 1rem;
+  margin: 1rem 0;
+  font-size: 1.7rem;
+  color: #333;
+  text-transform: none;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+  border-radius: 0.5rem;
+  width: 49%;
+}
+
+.order .row form .inputBox select {
   padding: 1rem;
   margin: 1rem 0;
   font-size: 1.7rem;
